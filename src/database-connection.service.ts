@@ -1,9 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import {
-  TypeOrmModuleAsyncOptions,
-  TypeOrmModuleOptions,
-  TypeOrmOptionsFactory,
-} from '@nestjs/typeorm';
+import { TypeOrmModuleOptions, TypeOrmOptionsFactory } from '@nestjs/typeorm';
 
 @Injectable()
 export class DatabaseConnectionService implements TypeOrmOptionsFactory {

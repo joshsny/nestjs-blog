@@ -1,13 +1,7 @@
-import {
-  Body,
-  Controller,
-  Post,
-  UsePipes,
-  ValidationPipe,
-} from '@nestjs/common';
+import { Body, Controller, Post, ValidationPipe } from '@nestjs/common';
 import { AuthService } from './auth.service';
 
-import { LoginDto, RegisterDto } from '../models/user.dto';
+import { LoginDto, RegisterDto } from '../models/user.model';
 
 @Controller('users')
 export class AuthController {
